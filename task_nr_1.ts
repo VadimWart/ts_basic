@@ -18,3 +18,14 @@ function transferEurToUsd(available: boolean, amount: number, commission: number
 }
 
 transferEurToUsd(true, 500, 1.05);
+
+
+// currRate = "1.05"
+//          ↓
+// fetchCurr("1.05")
+//          ↓
+// JSON.parse("1.05")
+//          ↓
+//       1.05 (number)
+//          ↓
+// 1.05 * 500 * 1.05 = 551.25
